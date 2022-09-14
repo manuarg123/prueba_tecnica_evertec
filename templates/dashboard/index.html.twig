@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .backround-color-div { background-color: red; padding: 2px 6px; text-align: center; }
+    .image-resize { width:  600px; height: 300px;}
+    .button-style { width:  200px; height: 100px; display: block; margin-right: auto; margin-left: auto;font-size: 40px;}
+</style>
+
+<div class="example-wrapper">
+    <h1>{{ welcome_message }}!</h1>
+
+    <h4> Este es el producto que tenemos disponible para su compra inmediata: </h4>
+
+    <div class="backround-color-div">
+            <img class="image-resize" src="https://www.caloryfrio.com/images/articulos/aire-domestico/aire-acondicionado-split.webp">
+            <button class="button-style">Comprar</button>
+    </div>
+</div>
+{% endblock %}
